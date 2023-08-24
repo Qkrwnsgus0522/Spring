@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<context:component-scan base-package="day59" />
+
+	<context:component-scan base-package="test" />
+	<bean class="test.GalaxyWatch" id="watch" />
+	<!-- <bean class="test.MiWatch" id="watch" /> -->
+	
+	<!-- 
+	<bean class="test.GalaxyPhone" id="galaxy">
+		<constructor-arg ref="mw" />
+	</bean>
+	
+	<bean class="test.GalaxyWatch" id="gw" lazy-init="true" />
+	<bean class="test.MiWatch" id="mw" lazy-init="true" />
+	
+	<bean class="test.IPhone" id="apple">
+		<property name="watch" ref="gw" />
+		<property name="name" value="티모" />
+	</bean>
+	 -->
+	
+	
+	 
+	<!-- 
+	<bean class="day59.SamsungTV" id="tv">
+		<constructor-arg ref="a" />
+	</bean>
+	
+	<bean class="day59.LgTV" id="tv">
+		<property name="remote" ref="a" />
+	</bean>
+	
+	<bean class="day59.RemoteA" id="a" />
+	<bean class="day59.RemoteB" id="b" />
+	 -->
+	<!-- 
+	<bean class="day59.TestBean" id="tb">
+		<property name="testList">
+			<list>
+				<value>작은 티모</value>
+				<value>중간 티모</value>
+				<value>큰 티모</value>
+			</list>
+		</property>
+	</bean>
+	<bean class="day59.TestBean2" id="tb2">
+		<property name="testMap">
+			<map>
+				<entry>
+					<key><value>1001</value></key>
+					<value>작은 티모</value>
+				</entry>
+				<entry>
+					<key><value>1002</value></key>
+					<value>중간 티모</value>
+				</entry>
+				<entry>
+					<key><value>1003</value></key>
+					<value>큰 티모</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	 -->
+	 
+</beans>
