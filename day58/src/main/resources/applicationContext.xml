@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="test.GalaxyPhone" id="galaxy">
+		<constructor-arg ref="mw" />
+	</bean>
+	<bean class="test.GalaxyWatch" id="gw" lazy-init="true" />
+	<bean class="test.MiWatch" id="mw" lazy-init="true" />
+	
+	<bean class="test.IPhone" id="apple" destroy-method="destroyMethod" lazy-init="true" />
+
+</beans>
